@@ -1,6 +1,6 @@
-# global-protect-vpn
+# gpvpn-cli
 
-[![CI](https://github.com/mpasternak/global-protect-vpn/actions/workflows/ci.yml/badge.svg)](https://github.com/mpasternak/global-protect-vpn/actions/workflows/ci.yml)
+[![CI](https://github.com/mpasternak/gpvpn-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/mpasternak/gpvpn-cli/actions/workflows/ci.yml)
 
 Command-line controller for **Palo Alto GlobalProtect** on macOS. Connect, disconnect, and check status without touching the mouse — and optionally open a browser tab automatically once the tunnel is up.
 
@@ -9,8 +9,8 @@ Requires macOS Accessibility permissions for the terminal you run it from (**Sys
 ## Installation
 
 ```bash
-git clone https://github.com/mpasternak/global-protect-vpn.git
-cd global-protect-vpn
+git clone https://github.com/mpasternak/gpvpn-cli.git
+cd gpvpn-cli
 cp gp.conf.sample gp.conf
 # edit gp.conf with your portal, username, and post-connect URL
 ```
