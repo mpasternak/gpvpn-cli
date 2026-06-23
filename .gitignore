@@ -1,0 +1,16 @@
+# Personal config — contains internal hostnames and credentials
+gp.conf
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor state
+.idea/
+.vscode/*.code-workspace
+*.swp
+*~

@@ -1,0 +1,30 @@
+# GlobalProtect VPN — sample configuration
+# Copy this file to gp.conf and fill in your values:
+#   cp gp.conf.sample gp.conf
+#
+# gp.conf is gitignored to keep credentials and internal hostnames out of VCS.
+
+# ---------------------------------------------------------------------------
+# VPN connection settings
+# ---------------------------------------------------------------------------
+
+# Hostname of the GlobalProtect portal (shown in the GP popup window)
+PORTAL="vpn.example.com"
+
+# VPN username
+USERNAME="your.username"
+
+# ---------------------------------------------------------------------------
+# Post-connect behaviour
+# ---------------------------------------------------------------------------
+
+# URL to poll (every 2 s) to detect when the VPN tunnel is up.
+# Use an internal host that is only reachable over VPN.
+POST_CONNECT_CHECK="https://192.168.0.1/"
+
+# URL to open in Firefox once POST_CONNECT_CHECK becomes reachable.
+# Leave empty to skip opening a browser.
+POST_CONNECT_OPEN="https://192.168.0.1/your/app/path"
+
+# How long to wait for POST_CONNECT_CHECK before giving up (seconds).
+POST_CONNECT_TIMEOUT=60
